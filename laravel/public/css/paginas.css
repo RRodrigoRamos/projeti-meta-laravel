@@ -1,0 +1,236 @@
+/* ########################### Pagina de LOGIN #######################*/
+article#login {
+    width: 80% !important;
+    min-height: 400px !important;
+    background: url("../img/fundos/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.8;
+    border-radius:10px;
+  }
+
+  article#login button {
+    font-size:12pt !important;
+    opacity: 0.6;
+   }
+
+  article#login button:hover {
+    font-size:13pt;
+    font-weight: bolder;
+    opacity:1;
+    cursor:pointer;
+    -webkit-transition: all 0.3s ease-in;
+   }
+
+  article#pg_cadastro {
+      width: 80% !important;
+      min-height: 400px !important;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      opacity: 0.8;
+    }
+    
+  article#pg_cadastro h2 {
+        text-align: center;
+        margin:20px !important; 
+      }
+/* espaçamento entre os itens do formulario  */
+  article#pg_cadastro .form-group {
+        margin-top:8px !important; 
+        margin-bottom:8px !important; 
+      }
+  article#pg_cadastro form div#propagandaEmail {
+    margin:20px !important;
+    padding:10px;
+    border-radius: 10px;
+    background-color:rgba(0,0,0,0.1) !important;
+  }
+
+/* ############################## PARA TELAS MOBILE #############################*/
+@media all and (max-width:990px){
+  article#login {
+      width: 100% !important;
+    }
+
+  article#login form{
+      margin:1pc auto !important;
+    /*padding:5px;*/
+      width:95% !important;
+      height:100%;
+      background-color:rgba(240, 249, 234, 0.5);
+      border-radius: 10px;
+    }
+  article#login h2 {
+      font-size:15pt;
+      font-variant: small-caps;
+    }
+
+    article#pg_cadastro {
+        width: 100% !important;
+      }
+  
+   article#pg_cadastro h2{
+        font-size:16pt;
+        text-align: center;
+      }
+
+/* ########################### paginas diversas #############################*/
+  section#topoAcessorio {
+      width:90%;
+      min-height:150px !important;
+      padding:20px !important;
+      background-position:100% 90% !important;
+      box-shadow:1px 2px 20px black;
+      opacity:0.6;
+
+    }
+    section#topoAutomotivo {
+        width:90%;
+        min-height:150px !important;
+        padding:20px !important;
+        background-position:100% 90% !important;
+        box-shadow:1px 2px 20px black;
+        opacity:0.6;
+      }
+    section#topoEletronico {
+        width:90%;
+        min-height:150px !important;
+        padding:20px !important;
+        background-position:100% 90% !important;
+        box-shadow:1px 2px 20px black;
+        opacity:0.6;
+      }
+    section#topoEletrodomestico {
+        width:90%;
+        min-height:150px !important;
+        padding:20px !important;
+        background-position:100% 90% !important;
+        box-shadow:1px 2px 20px black;
+        opacity:0.6;
+      }
+    section#pg_imoveis {
+        width:90%;
+        min-height:150px !important;
+        padding:20px !important;
+        background-position:100% 90% !important;
+        box-shadow:1px 2px 20px black;
+        opacity:0.6;
+      }
+
+  section h1 {
+      font-size:15pt;
+    }
+  section h4 {
+      font-size:13pt;
+    }
+
+  }
+
+/* ################################## telas normal desktop ################################ */
+article#login form{
+    margin:20px auto !important;
+    padding:20px;
+    width:80%;
+    height:100%;
+    background-color:rgba(240, 249, 234, 0.5);
+    border-radius: 10px;
+    z-index: 2;
+  }
+
+article#login h2 {
+    font-variant: small-caps;
+    margin: 10px !important;
+  }
+
+/*####################################### Página de ACESSÓRIO ################################*/
+/*Topo Acessorio - Imagem destaque para informação*/
+section#topoAcessorio {
+  width:100%;
+  min-height:200px;
+  padding:50px;
+  background-image:url("../img/categorias/anuncios/acessorio/principal.jpeg");
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position:100% 50%;
+  box-shadow:1px 2px 20px black;
+  border-radius:50px;
+  opacity:0.6;
+  font-family: "FontMenu", Arial, sans-serif;
+  font-variant: small-caps;
+}
+
+/*topo pagina automotivos*/
+section#topoAutomotivo {
+  width:100%;
+  min-height:200px;
+  padding:50px;
+  background-image:url("../img/categorias/anuncios/automotivo/principal.png");
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position:100% 50%;
+  box-shadow:1px 2px 20px black;
+  border-radius:50px;
+  opacity:0.6;
+  font-family: "FontMenu", Arial, sans-serif;
+  font-variant: small-caps;
+}
+/*topo pagina Eletrônicos*/
+section#topoEletronico {
+  width:100%;
+  min-height:200px;
+  padding:50px;
+  background-image:url("../img/categorias/anuncios/eletronico/principal.jpg");
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position:100% 50%;
+  box-shadow:1px 2px 20px black;
+  border-radius:50px;
+  opacity:0.6;
+  font-family: "FontMenu", Arial, sans-serif;
+  font-variant: small-caps;
+}
+/*topo pagina EletroDomesticos*/
+section#topoEletrodomestico {
+  width:100%;
+  min-height:200px;
+  padding:50px;
+  background-image:url("../img/categorias/anuncios/eletrodomestico/principal.jpg");
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position:100% 50%;
+  box-shadow:1px 2px 20px black;
+  border-radius:50px;
+  opacity:0.6;
+  font-family: "FontMenu", Arial, sans-serif;
+  font-variant: small-caps;
+}
+/*topo pagina EletroDomesticos*/
+section#pg_imoveis {
+  width:100%;
+  min-height:200px;
+  padding:50px;
+  background-image:url("../img/categorias/anuncios/imovel/principal.jpg");
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position:100% 50%;
+  box-shadow:1px 2px 20px black;
+  border-radius:50px;
+  opacity:0.6;
+  font-family: "FontMenu", Arial, sans-serif;
+  font-variant: small-caps;
+}
+
+section#topoAcessorio:hover,section#topoAutomotivo:hover,section#topoEletronico:hover,section#topoEletrodomestico:hover, section#pg_imoveis:hover{
+  color:green;
+  opacity:1;
+}
+
+/*Controle de paginação por pagina*/
+article#pg_acessorio nav#paginacao, article#pg_automotivos nav#paginacao, article#pg_eletrodomesticos nav#paginacao, article#pg_imoveis nav#paginacao, article#pg_eletronicos nav#paginacao {
+  width:100% !important;
+  margin: 10px auto !important;
+  /*background-color: red !important;*/
+  box-shadow:none;
+}
