@@ -11,5 +11,30 @@
 |
 */
 
-Route::get('/', 'InicioController@index');
+/* Route::get('/', 'InicioController@index');
 
+Route::get('/acessorios',function() {
+	return view('acessorios');
+});
+
+Route::get('/automotivos',function() {
+	return view('automotivos');
+});
+
+Route::get('/eletronicos',function() {
+	return view('eletronicos');
+});
+
+Route::get('/eletrodomesticos',function() {
+	return view('eletrodomesticos');
+});
+
+Route::get('/imoveis',function() {
+	return view('imoveis');
+});
+
+*/
+
+Route::get('/{categorias}', function($categorias){
+	dd($categorias);
+});
