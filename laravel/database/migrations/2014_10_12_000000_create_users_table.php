@@ -18,8 +18,13 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
+            $table->string('sexo');
+            $table->string('cpf');
+            $table->string('data_nasc');
             $table->rememberToken();
             $table->timestamps();
+            $table->integer('contato_user_id')->unsigned();
+            $table->foreign('contato_user_id')->references('id')->on('contatos');
         });
     }
 
