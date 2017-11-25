@@ -35,6 +35,10 @@ Route::get('/imoveis',function() {
 
 */
 
-Route::get('/{categorias}', function($categorias){
+/* Route::get('/{categorias}', function($categorias){
 	dd($categorias);
-});
+}); */
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

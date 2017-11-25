@@ -16,13 +16,15 @@ class CreateContatosTable extends Migration
         Schema::create('contatos', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('contato');
-            $table->integer('whats');
+            $table->integer('whats')->nullable();
             $table->string('tipoEndereco');
             $table->string('endereco');
             $table->integer('cep');
             $table->string('numero_casa');
             $table->string('cidade');
             $table->string('bairro');
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }
