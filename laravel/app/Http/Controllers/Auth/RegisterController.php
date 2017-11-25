@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\contato;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -62,10 +63,26 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        contato::create([
+            'contato' => $data['contato'],
+            'whats' => $data['whats'],
+            'tipoEndereco' =>$data['tipoEndereco'],
+            'endereco' =>$data['endereco'],
+            'cep' => $data['cep'],
+            'numero_casa' =>$data['numero_casa'],
+            'cidade' =>$data['cidade'],
+            'bairro' =>$data['bairro'],
+        ]);
+
+        User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
-        ]);
+            'sexo' => $data['sexo'],
+            'cpf' => $data['cpf'],
+            'data_nasc' => $data['data_nasc'],
+          ]);
+
     }
+
 }
