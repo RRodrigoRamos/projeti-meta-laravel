@@ -1,43 +1,39 @@
 @extends('template')
-
 @section('conteudo')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">NOVO REGISTRO DE USUARIO</div>
+<article id="pg_cadastro">
+    <hr>
+    <h2>
+        <i class="fa fa-user-plus" aria-hidden="true"></i> Cadastro de Usúario
+    </h2>
+    <hr>
+    <form id="cadastro" class="form-horizontal" method="POST" action="{{ route('register') }}">
+        <div class="form-row justify-content-around">
+        {{ csrf_field() }}
 
-                <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('register') }}">
-                        {{ csrf_field() }}
-
-                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label for="name" class="col-md-4 control-label">Name </label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
-
-                                @if ($errors->has('name'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">EMAIL @</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
-
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+        <div class="form-group col-md-6 {{ $errors->has('email') ? ' has-error' : '' }}">
+                <label for="EmailUser">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    Email*
+                </label>
+                  <input id="email" type="email" class="form-control" id="EmailUser" name="email" placeholder="Digite seu Email" value="{{ old('email') }}" required>
+                @if ($errors->has('email'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('email') }}</strong>
+                        </span>
+                @endif
+        </div>
+        
+            <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+            <label for="name" class="col-md-4 control-label">Name </label>
+            <div class="col-md-6">
+                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
+                        @if ($errors->has('name'))
+                                <span class="help-block">
+                                <strong>{{ $errors->first('name') }}</strong>
+                            </span>
+                        @endif
+                </div>
+            </div>
 
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-4 control-label">SENHA</label>
@@ -70,8 +66,5 @@
                         </div>
                     </form>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
+</article>
 @endsection
