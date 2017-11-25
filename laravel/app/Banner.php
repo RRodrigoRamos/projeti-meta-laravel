@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class patrocinio extends Model
+class Banner extends Model
 {
     //
 }

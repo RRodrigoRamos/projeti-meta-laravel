@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class favorito extends Model
+class Topo extends Model
 {
     //
 }

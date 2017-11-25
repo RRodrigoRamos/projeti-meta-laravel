@@ -15,11 +15,11 @@ class CreateContatosTable extends Migration
     {
         Schema::create('contatos', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('contato');
-            $table->integer('whats')->nullable();
+            $table->string('contato');
+            $table->string('whats')->nullable();
             $table->string('tipoEndereco');
             $table->string('endereco');
-            $table->integer('cep');
+            $table->string('cep');
             $table->string('numero_casa');
             $table->string('cidade');
             $table->string('bairro');
