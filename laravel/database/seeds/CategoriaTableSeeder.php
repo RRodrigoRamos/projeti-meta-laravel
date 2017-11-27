@@ -25,5 +25,26 @@ class CategoriaTableSeeder extends Seeder
         'link'=>'/automotivos',
         'habilitado'=>'s',
         ]);
+
+        Categoria::create([
+        'descricao'=>'Eletrônicos',
+        'ordem'=>'3',
+        'link'=>'/eletronicos',
+        'habilitado'=>'s',
+        ]);
+
+        Categoria::create([
+        'descricao'=>'EletroEletronicos',
+        'ordem'=>'4',
+        'link'=>'/eletroeletronicos',
+        'habilitado'=>'s',
+        ]);
+
+        Categoria::create([
+        'descricao'=>'Imovéis',
+        'ordem'=>'5',
+        'link'=>'/eletroeletronicos',
+        'habilitado'=>'s',
+        ]);
     }
 }

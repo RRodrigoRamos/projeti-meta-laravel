@@ -31,26 +31,26 @@
  				</span>
  			</button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<a class="nav-item nav-link active" href="./index.php">
+				<a class="nav-item nav-link active" href="/inicio">
 					<i class="fa fa-home fa-lg" aria-hidden="true">
-					</i> HOME 
+					</i> HOME
 						<span class="sr-only">(current)</span>
 				</a>
-				
+
 				<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<i class="fa fa-sign-in" aria-hidden="true">
 								</i> LOGIN
 							</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="./pg/login.php"> 
+							<a class="dropdown-item" href="./pg/login.php">
 								<i class="fa fa-check" aria-hidden="true">
-									</i> 
+									</i>
 									Entra
 							</a>
 							<a class="dropdown-item" href="./pg/cadastro.php">
 								<i class="fa fa-check-square-o" aria-hidden="true">
-								</i> 
+								</i>
 								Cadastro
 							</a>
 						</div>
@@ -60,15 +60,15 @@
 			<!-- botao de pesquisa no menu -->
 			<form id="pesquisa" class="form-inline my-lg-0 direita">
 				<input class="form-control col-md-9" type="text" placeholder=" Pesquisar" aria-label="Search">
-				<button class="btn btn-outline-success my-0" type="submit"> &nbsp; 
+				<button class="btn btn-outline-success my-0" type="submit"> &nbsp;
 					<i class="fa fa-search" aria-hidden="true">
-					</i> &nbsp; 
+					</i> &nbsp;
 				</button>
 			</form>
 
 						<!-- icones de rede social -->
-				<span id="icones"> 
-					<a href="#twitter"> 
+				<span id="icones">
+					<a href="#twitter">
 						<i class="fa fa-twitter fa-2x" aria-hidden="true">
 						</i>
 					</a>
@@ -76,8 +76,8 @@
 						<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
 					</a>
 					<a href="#instagran">
-						<i class="fa fa-instagram fa-2x" aria-hidden="true"> </i> 
-					</a> 
+						<i class="fa fa-instagram fa-2x" aria-hidden="true"> </i>
+					</a>
 				</span>
       </nav><!-- Fim do Menu -->
 
@@ -85,7 +85,7 @@
     @yield('propaganda-topo')
 	</header><!-- Fim topo -->
 
-	<!-- fim conteudo -->
+	<!-- Area reservada ao Conteudo -->
 	@yield('conteudo')
 
 	<footer id="rodape" class="row"> <!-- inicio rodape -->
@@ -100,14 +100,14 @@
 					</h5>
 				</li>
 				<li>
-					<i class="fa fa-sign-in" aria-hidden="true"></i> 
+					<i class="fa fa-sign-in" aria-hidden="true"></i>
 					<a href="./pg/login.php"> Entrar </a>
 				</li>
 				<li>
 					<i class="fa fa-check-square-o" aria-hidden="true"></i> <a href="./pg/cadastro.php" target="_blank"> Cadastro</a>
 				</li>
 				<li>
-					<i class="fa fa-bullhorn" aria-hidden="true"></i> 
+					<i class="fa fa-bullhorn" aria-hidden="true"></i>
 					<a href="./pg/cadastro_email.php" target="_blank"> Fique por dentro - Cadastrar Email</a>
 				</li>
 			</ul>
@@ -124,7 +124,7 @@
 					<a href="https://github.com/Andersonpinheirocruz" target="_blank"> Anderson Pinheiro </a>
 				</li>
 				<li>
-					 <i class="fa fa-github" aria-hidden="true"></i> 
+					 <i class="fa fa-github" aria-hidden="true"></i>
 					 <a href="https://github.com/dutraweslley" target="_blank"> Weslley Dutra </a>
 				</li>
 				<li>

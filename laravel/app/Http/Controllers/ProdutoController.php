@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\produto;
 use Illuminate\Http\Request;
+use App\Produto;
 
 class ProdutoController extends Controller
 {
@@ -14,7 +14,10 @@ class ProdutoController extends Controller
      */
     public function index()
     {
-        //
+      $produto = Produto::all();
+      echo "<pre>";
+      print_r($produto);
+      echo "</pre>";
     }
 
     /**
@@ -44,9 +47,12 @@ class ProdutoController extends Controller
      * @param  \App\produto  $produto
      * @return \Illuminate\Http\Response
      */
-    public function show(produto $produto)
+    public function show($id)
     {
-        //
+        $produto = Produto::find($id);
+        echo "<pre>";
+        print_r($produto);
+        echo "</pre>";
     }
 
     /**
