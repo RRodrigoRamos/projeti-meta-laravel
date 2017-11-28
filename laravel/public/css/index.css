@@ -88,7 +88,7 @@ form button:hover {
   nav {
     width:100% !important;
     box-shadow: 1px 2px 20px black;
-    font-family: "FontMenu", Arial, sans-serif;
+    font-family: "FontMenu", Arial, sans-serif !important;
     font-variant: small-caps;
     font-size: 14pt !important;
     z-index:10;
@@ -101,9 +101,13 @@ form button:hover {
   }
 
   nav a {
-    padding-left:15px !important;
-    padding-right:15px !important;
+    padding-left:10px !important;
+    padding-right:10px !important;
   }
+
+  nav li {
+    list-style: none;
+    }
 
 
 /*controle de fonte*/

@@ -1,4 +1,4 @@
 @extends('template')
 @section('conteudo')
 	uhkhkhkhkh
-@stop 
+@stop
