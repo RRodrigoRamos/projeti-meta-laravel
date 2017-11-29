@@ -41,7 +41,7 @@
 				<div class="row align-items-center">
 					<div class="col-sm-3 col-md-3">
 						<div class="thumbnail">
-							<img data-src="holder.js/100%x100" alt="Produto -C&M-"  src="img/categorias/anuncios/eletrodomestico/3.jpg" data-holder-rendered="true"/>
+							<img data-src="holder.js/100%x100" alt="Produto -C&amp;M-"  src="img/categorias/anuncios/eletrodomestico/3.jpg" data-holder-rendered="true"/>
 							<div class="caption">
 								<h4>Fogão Esmaltec AutoLimpante</h4>
 								<p>Fogão 5 Bocas - Esmaltec 2017 <br/>
@@ -63,7 +63,7 @@
 				</div>
 					<div class="col-sm-3 col-md-3" class="patrocinio">
 						<div class="thumbnail">
-							<img data-src="holder.js/100%x100" alt="Produto -C&M-"   src="img/rodape/meta.png" data-holder-rendered="true">
+							<img data-src="holder.js/100%x100" alt="Produto -C&amp;M-"   src="img/rodape/meta.png" data-holder-rendered="true">
 							<div class="caption">
 								<h5>Patrocinador</h5>
 								<p>
@@ -73,6 +73,20 @@
 					</div>
 				</div>
 			</div>
+      <!-- ############# Para trazer os dados do produto ########### -->
+        <table border = 1>
+              <tr>
+                <td>ID do Produto</td>
+                <td>Titulo Produto</td>
+              </tr>
+            @foreach ($produtos as $produto)
+              <tr>
+                <td> {{ $produto->id }} </td>
+                <td> {{ $produto->titulo }} </td>
+              </tr>
+            @endforeach
+        </table>
+
 		</div>
 </article>
 @endsection

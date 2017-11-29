@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 		<!-- SEO -->
-	<title>..::Compra&amp;Venda Meio do Mundo::..</title>
+	<title>Compra&amp;Venda .:Meio do Mundo:.</title>
     <meta name="author" content="Anderson Cruz,Rodrigo Ramos,Weslley Dutra"/>
     <meta name="description" content="Site de Compra e Venda, agindo como intermediario numa transação, para pessoas que residem na capital do estado do Amapá">
 		<meta name="keywords" content="1.Vendas,2 compras, venda e compra, Vender, vende, Comprar" />
@@ -14,7 +14,7 @@
 		<link rel="stylesheet" type="text/css" media="all" href="css/bootstrap.min.css"/>
   	<link rel="stylesheet" type="text/css" media="screen" href="css/index.css"/>
   	<link rel="stylesheet" type="text/css" media="screen" href="css/paginas.css"/>
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>
 </head>
 <body>
 <main class="container-fluid"><!-- principal -->
@@ -173,7 +173,7 @@
 			</ul>
 	   </div>
 	<span>
-		<a id="scrollUp" href="#topoSite" title="Scroll to top">
+		<a id="scrollUp" href="#topoSite" title="Voltar ao Topo!">
 			<i class="fa fa-angle-double-up fa-3x" aria-hidden="true"></i>
 		</a>
 	</span>

@@ -12,6 +12,7 @@
 */
 
 Route::get('/inicio', 'InicioController@index');
+Route::get('/', 'InicioController@index');
 
 Route::get('/produtos', 'ProdutoController@index');
 

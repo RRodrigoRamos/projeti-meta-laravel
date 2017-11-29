@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use DB;
 use App\Produto;
+use App\Http\Requests;
+use Illuminate\Http\Request;
+use App\Controllers\Controller;
 
 class ProdutoController extends Controller
 {
@@ -13,11 +16,14 @@ class ProdutoController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
+
     {
-      $produto = Produto::all();
-      echo "<pre>";
-      print_r($produto);
-      echo "</pre>";
+      $produto = DB::select('select * from produtos');
+
+      return view('inicio',['produtos' => $produtos]);
+      // $produto = Produto::all();
+      // dd($produto);
+      // // return redirect()->route('home')->with( alert()->success('Produtos Pesquisados com sucesso!'));
     }
 
     /**
