@@ -6,10 +6,10 @@
           <ol class="carousel-indicators">
              	<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
             	</li>
-              	<li data-target="#carouselExampleIndicators" data-slide-to="1">
-              	</li>
-              	<li data-target="#carouselExampleIndicators" data-slide-to="2">
-              	</li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1">
+              </li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2">
+              </li>
           </ol>
           <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
@@ -73,20 +73,6 @@
 					</div>
 				</div>
 			</div>
-      <!-- ############# Para trazer os dados do produto ########### -->
-        <table border = 1>
-              <tr>
-                <td>ID do Produto</td>
-                <td>Titulo Produto</td>
-              </tr>
-            @foreach ($produtos as $produto)
-              <tr>
-                <td> {{ $produto->id }} </td>
-                <td> {{ $produto->titulo }} </td>
-              </tr>
-            @endforeach
-        </table>
-
 		</div>
 </article>
 @endsection

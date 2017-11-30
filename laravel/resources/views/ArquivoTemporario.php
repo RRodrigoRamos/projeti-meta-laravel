@@ -19,6 +19,16 @@
 					</li>
 				</div>
 
-
-
-				
+				  {{ dd($users) }} 
+				<table border = 1>
+								<tr>
+									<td>ID do Produto</td>
+									<td>Titulo Produto</td>
+								</tr>
+							@foreach ($produtos as $produto)
+								<tr>
+									<td> {{ $produto->id }} </td>
+									<td> {{ $produto->titulo }} </td>
+								</tr>
+							@endforeach
+				</table>

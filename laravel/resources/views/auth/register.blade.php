@@ -1,12 +1,10 @@
 @extends('template')
 @section('conteudo')
 <article id="pg_cadastro" class="container">
-    <hr>
-    <br/>
+    <hr />
     <h2 class="text-center">
         <i class="fa fa-user-plus" aria-hidden="true"></i> Cadastro de Usúario
     </h2>
-    <br/>
     <hr>
     <br/>
     <form id="cadastro" method="POST" action="{{ route('register') }}">

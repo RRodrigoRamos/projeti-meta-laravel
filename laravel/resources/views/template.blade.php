@@ -11,21 +11,22 @@
 			<!-- Arquivos e Fontes -->
     <link rel="icon" href="img/amapa.png" type="image/x-icon"/>
     <link rel="shortcut icon" href="img/amapa.png" type="image/x-icon"/>
-		<link rel="stylesheet" type="text/css" media="all" href="css/bootstrap.min.css"/>
-  	<link rel="stylesheet" type="text/css" media="screen" href="css/index.css"/>
-  	<link rel="stylesheet" type="text/css" media="screen" href="css/paginas.css"/>
-		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" media="all" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" media="all" href="../css/bootstrap.css"/>
+  	<link rel="stylesheet" type="text/css" media="screen" href="../css/index.css"/>
+  	<link rel="stylesheet" type="text/css" media="screen" href="../css/paginas.css"/>
+		<link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>
 </head>
 <body>
 <main class="container-fluid"><!-- principal -->
 	<span id="topoSite"> </span><!--botao de subi-->
 	  <figure id="topo"> <!-- Logo Menu -->
-        <img src="./img/topo/capa1.png" width="100%" height="100%" class="align-top img-fluid" alt="Compra e Vendo Meio do Mundo"/>
+        <img src="../img/topo/capa1.png" width="100%" height="100%" class="align-top img-fluid" alt="Compra e Vendo Meio do Mundo"/>
       </figure>
 	<header><!-- inicio do Menu -->
   	<nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
 			<figure>
-				 <img src="./img/topo/capa.png" width="300px" height="160px" class="d-inline-block align-top img-fluid" alt="Compra e Venda - MEIO DO MUNDO"/>
+				 <img src="../img/topo/capa.png" width="300px" height="160px" class="d-inline-block align-top img-fluid" alt="Compra e Venda - MEIO DO MUNDO"/>
 			 </figure>
 			 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
  				<span class="navbar-toggler-icon">
@@ -53,7 +54,7 @@
 					Imovéis
 				</a>
 				<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="/login" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<i class="fa fa-sign-in" aria-hidden="true">
 								</i> LOGIN
 							</a>
@@ -102,7 +103,6 @@
 
 	<!-- Area reservada ao Conteudo -->
 	@yield('conteudo')
-
 	<footer id="rodape" class="row"> <!-- inicio rodape -->
 		<div id="fundoRodape">
 			<!-- icone do rodape em destaque -->
@@ -116,14 +116,14 @@
 				</li>
 				<li>
 					<i class="fa fa-sign-in" aria-hidden="true"></i>
-					<a href="./pg/login.php"> Entrar </a>
+					<a href="/login"> Entrar </a>
 				</li>
 				<li>
-					<i class="fa fa-check-square-o" aria-hidden="true"></i> <a href="./pg/cadastro.php" target="_blank"> Cadastro</a>
+					<i class="fa fa-check-square-o" aria-hidden="true"></i> <a href="/register" target="_blank"> Cadastro</a>
 				</li>
 				<li>
 					<i class="fa fa-bullhorn" aria-hidden="true"></i>
-					<a href="./pg/cadastro_email.php" target="_blank"> Fique por dentro - Cadastrar Email</a>
+					<a href="/cadatrar_email" target="_blank"> Fique por dentro - Cadastrar Email</a>
 				</li>
 			</ul>
 		</div>
@@ -168,7 +168,7 @@
 				</li>
 				<li>
 					<i class="fa fa-envelope-o" aria-hidden="true"></i>
-					<a href="./pg/contato.php" target="_blank"> Envie uma Mensagem </a>
+					<a href="/enviar_mensagem" target="_blank"> Envie uma Mensagem </a>
 				</li>
 			</ul>
 	   </div>
@@ -179,10 +179,8 @@
 	</span>
 		</footer><!--Fim Rodapé -->
 </main>
-	<script src="js/jquery-3.2.1.slim.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-	<script src="js/config.js"></script>
-	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="../js/jquery-3.2.1.slim.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

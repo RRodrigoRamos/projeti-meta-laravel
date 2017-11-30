@@ -6,7 +6,7 @@ use DB;
 use App\Produto;
 use App\Http\Requests;
 use Illuminate\Http\Request;
-use App\Controllers\Controller;
+use App\Http\Controllers\Controller;
 
 class ProdutoController extends Controller
 {
@@ -15,12 +15,15 @@ class ProdutoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
 
     {
-      $produto = DB::select('select * from produtos');
+      $produtos = DB::select('select * from produtos');
+      return view('produtos',['produtos' => $produtos]);
 
-      return view('inicio',['produtos' => $produtos]);
+      $user = DB::select('select * from users');
+      return view('produtos',['users' => $users]);
+
       // $produto = Produto::all();
       // dd($produto);
       // // return redirect()->route('home')->with( alert()->success('Produtos Pesquisados com sucesso!'));
@@ -53,12 +56,10 @@ class ProdutoController extends Controller
      * @param  \App\produto  $produto
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        $produto = Produto::find($id);
-        echo "<pre>";
-        print_r($produto);
-        echo "</pre>";
+      $produto = Produto::all();
+      dd($produto);
     }
 
     /**

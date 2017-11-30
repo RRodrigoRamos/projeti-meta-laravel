@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/inicio', 'InicioController@index');
-Route::get('/', 'InicioController@index');
+Auth::routes();
 
+Route::get('/', 'InicioController@index');
+Route::get('/inicio', 'ProdutoController@index');
+Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/produtos', 'ProdutoController@index');
 
 Route::get('/acessorios',function() {
@@ -36,10 +38,19 @@ Route::get('/imoveis',function() {
 	return view('imoveis');
 });
 
+Route::get('/user',function() {
+	return view('user');
+});
+
+########### Reset através de senha para meu email ##############
+Route::get('/reset_email',function() {
+	return view('auth.passwords.email');
+});
+
+Route::get('/reset',function() {
+	return view('auth.passwords.reset');
+});
+
 /* Route::get('/{categorias}', function($categorias){
 	dd($categorias);
 }); */
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
