@@ -41,7 +41,7 @@
 				<div class="row align-items-center">
 					<div class="col-sm-3 col-md-3">
 						<div class="thumbnail">
-							<img data-src="holder.js/100%x100" alt="Produto -C&amp;M-"  src="img/categorias/anuncios/eletrodomestico/3.jpg" data-holder-rendered="true"/>
+							<img data-src="holder.js/100%x100" alt="Produto -C&amp;M-"  src="" data-holder-rendered="true"/>
 							<div class="caption">
 								<h4>Fogão Esmaltec AutoLimpante</h4>
 								<p>Fogão 5 Bocas - Esmaltec 2017 <br/>

@@ -13,37 +13,42 @@ class CategoriaTableSeeder extends Seeder
     public function run()
     {
         Categoria::create([
-        'descricao'=>'Acessorio',
+        'titulo'=>'Acessórios',
+        'descricao'=>'Produtos relacionado a Acessórios',
         'ordem'=>'1',
         'link'=>'/acessorio',
         'habilitado'=>'s',
         ]);
 
         Categoria::create([
-        'descricao'=>'Automotivo',
+        'titulo'=>'Automotivos',
+        'descricao'=>'Produtos relacionado veiculos',
         'ordem'=>'2',
         'link'=>'/automotivos',
         'habilitado'=>'s',
         ]);
 
         Categoria::create([
-        'descricao'=>'Eletrônicos',
+        'titulo'=>'Eletrônicos',
+        'descricao'=>'Produtos relacionado a Eletrônicos',
         'ordem'=>'3',
         'link'=>'/eletronicos',
         'habilitado'=>'s',
         ]);
 
         Categoria::create([
-        'descricao'=>'EletroEletronicos',
+        'titulo'=>'EletrôEletrônicos',
+        'descricao'=>'Produtos relacionado a EletrôDomestico diversos',
         'ordem'=>'4',
         'link'=>'/eletroeletronicos',
         'habilitado'=>'s',
         ]);
 
         Categoria::create([
-        'descricao'=>'Imovéis',
+        'titulo'=>'Imóveis',
+        'descricao'=>'Produtos relacionado a Imoveis e Propriedades',
         'ordem'=>'5',
-        'link'=>'/eletroeletronicos',
+        'link'=>'/imoveis',
         'habilitado'=>'s',
         ]);
     }

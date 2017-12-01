@@ -21,8 +21,8 @@ class ProdutoController extends Controller
       $produtos = DB::select('select * from produtos');
       return view('produtos',['produtos' => $produtos]);
 
-      $user = DB::select('select * from users');
-      return view('produtos',['users' => $users]);
+      // $user = DB::select('select * from users');
+      // return view('produtos',['users' => $users]);
 
       // $produto = Produto::all();
       // dd($produto);

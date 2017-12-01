@@ -16,9 +16,10 @@ class ProdutoTableSeeder extends Seeder
         Produto::create([
           'usuario_id'=>1,
           'categoria_id'=>1,
-          'titulo'=>'Nome Meu Produto',
+          'titulo'=>'Produto Cadastrado',
           'descricao'=>'Descrição do Produto Com informações relevantes para os interessados no produto',
-          'Valor'=>'108.00',
+          'urlimg'=>'img/categorias/anuncios/eletrodomestico/4.jpg',
+          'Valor'=>'500,00',
           'estado'=>'SEMI-NOVO',
           'quantidade'=>'2',
           'habilitado'=>'S',

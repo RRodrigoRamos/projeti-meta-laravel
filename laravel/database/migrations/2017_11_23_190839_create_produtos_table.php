@@ -21,7 +21,8 @@ class CreateProdutosTable extends Migration
             $table->foreign('categoria_id')->references('id')->on('categorias');
             $table->string('titulo');
             $table->text('descricao');
-            $table->float('valor',8,2);
+            $table->text('urlimg');
+            $table->string('valor');
             $table->string('estado');
             $table->integer('quantidade');
             $table->string('habilitado');

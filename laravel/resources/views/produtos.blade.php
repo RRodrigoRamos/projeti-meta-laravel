@@ -39,18 +39,19 @@
 	<article id="conteudo"><!-- inicio conteudo -->
 			<div class="bs-example">
         <div class="row align-items-center">
-        @foreach ($produtos as $produto)
+        @foreach ($produtos as $indice => $produto)
 					<div class="col-sm-3 col-md-3">
 						<div class="thumbnail">
-							<img data-src="holder.js/100%x100" alt="Produto -C&amp;M-"  src="img/categorias/anuncios/eletrodomestico/3.jpg" data-holder-rendered="true"/>
+							<img data-src="holder.js/100%x100" alt="Produto -C&amp;M-"  src="{{ $produto->urlimg }}" data-holder-rendered="true"/>
 							<div class="caption">
                 <h4>Teste {{ $produto->titulo }} </h4>
-								<p><b>n° P{{ $produto->id }}</b> &nbsp;Fogão 5 Bocas - Esmaltec 2017 <br/>
-									<b>Estado: NOVO</b>
+								<p><b>n° P{{ $produto->id }}</b> &nbsp;
+                  {{ $produto->descricao }} <br/>
+									<b>Estado:{{ $produto->estado }}</b>
 								</p>
 								<p>
 									<b class="btn btn-outline-primary" role="button">
-										<i class="fa fa-money" aria-hidden="true"></i> R$ 600,000
+										<i class="fa fa-money" aria-hidden="true"></i> R$ {{  $produto->valor }}
 									</b>
 									<a href="#" class="btn btn-outline-dark" role="button">Adicionar </a>
 								</p>
@@ -62,17 +63,19 @@
 						</div>
 					</div>
 				</div>
-        <div class="col-sm-3 col-md-3" class="patrocinio">
-          <div class="thumbnail">
-            <img data-src="holder.js/100%x100" alt="Produto -C&amp;M-"   src="img/rodape/meta.png" data-holder-rendered="true">
-            <div class="caption">
-              <h5>Patrocinador</h5>
-              <p>
-                <a href="http://www.meta.edu.br/faculdade/" class="btn btn-outline-secondary" role="button">Site Institucional</a>
-              </p>
+            @if($indice % 3 === 2)
+              <div class="col-sm-3 col-md-3" class="patrocinio">
+                <div class="thumbnail">
+                  <img data-src="holder.js/100%x100" alt="Produto -C&amp;M-"   src="img/rodape/meta.png" data-holder-rendered="true">
+                  <div class="caption">
+                    <h5>Patrocinador</h5>
+                    <p>
+                      <a href="http://www.meta.edu.br/faculdade/" class="btn btn-outline-secondary" role="button">Site Institucional</a>
+                    </p>
+                  </div>
+              </div>
             </div>
-        </div>
-        </div>
+            @endif
         @endforeach
 			</div>
 		</div>

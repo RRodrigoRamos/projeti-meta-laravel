@@ -13,6 +13,8 @@ class InicioController extends Controller
 
     	return view('inicio', [
     		'menus' => $menus
+
+        // dar pra fazer o menu dinamico na view de inicio buscar essas informações do bando
     	]);
     }
 }
