@@ -24,18 +24,18 @@ class ProdutoController extends Controller
 
       // $user = DB::select('select * from users');
       // return view('produtos',['users' => $users]);
-
       // $produto = Produto::all();
       // dd($produto);
       // // return redirect()->route('home')->with( alert()->success('Produtos Pesquisados com sucesso!'));
     }
 
-    public function acessorios(Request $request)
+    public function acessorios($id)
 
     {
-      $produtos = DB::select('select * from produtos where categoria_id=1 order by rand() limit 9');
-      $users = User::all();
-      return view('acessorios',['produtos' => $produtos, 'users' => $users]);
+      $produtos=Produto::where('categoria_id',$id);
+      // $produtos = DB::select('select * from produtos where categoria_id=1 order by rand() limit 9');
+      // $users = DB::select;
+        return view('acessorios')->with(compact($produtos));
 
       // $user = DB::select('select * from users');
       // return view('produtos',['users' => $users]);

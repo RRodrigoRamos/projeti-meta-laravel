@@ -28,7 +28,7 @@
 							@foreach ($users as $user)
 								<p>
 									<b class="btn btn-outline-success" role="button">
-										<i class="fa 	fa-whatsapp" aria-hidden="true"></i> Contato: <wbr>{{ $user->cpf }}
+										<i class="fa 	fa-whatsapp" aria-hidden="true"></i> Contato: <wbr>{{ $user->telefone }}
 									</b>
 								</p>
 							@endforeach

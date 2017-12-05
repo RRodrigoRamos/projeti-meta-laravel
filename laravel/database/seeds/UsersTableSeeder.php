@@ -17,8 +17,35 @@ class UsersTableSeeder extends Seeder
           'name'=>'RodrigoRamos',
           'password'=>bcrypt('123'),
           'sexo'=>'M',
-          'cpf'=>'000.000.00',
-          'data_nasc'=>'2010-05-04',
+          'cpf'=>'854.319.742-20',
+          'data_nasc'=>'1990-02-19',
+        ]);
+
+        User::create([
+          'email'=>'teste1@gmail.com',
+          'name'=>'Usuario1',
+          'password'=>bcrypt('222'),
+          'sexo'=>'M',
+          'cpf'=>'040.212.545-00',
+          'data_nasc'=>'1992-05-04',
+        ]);
+
+        User::create([
+          'email'=>'teste2@hotmail.com',
+          'name'=>'Usuario2',
+          'password'=>bcrypt('333'),
+          'sexo'=>'F',
+          'cpf'=>'001.211.115-12',
+          'data_nasc'=>'1992-05-04',
+        ]);
+
+        User::create([
+          'email'=>'teste3@hotmail.com',
+          'name'=>'Usuario3',
+          'password'=>bcrypt('444'),
+          'sexo'=>'F',
+          'cpf'=>'661.551.885-90',
+          'data_nasc'=>'1995-04-03',
         ]);
     }
 }
