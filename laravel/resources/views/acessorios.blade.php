@@ -25,11 +25,13 @@
 								</b>
 								<a href="#" class="btn btn-outline-dark" role="button">Favoritar </a>
 							</p>
-							<p>
-								<b class="btn btn-outline-success" role="button">
-								<i class="fa 	fa-whatsapp" aria-hidden="true"></i> Contato:<wbr>96 - 99102-9214
-								</b>
-							</p>
+							@foreach ($users as $user)
+								<p>
+									<b class="btn btn-outline-success" role="button">
+										<i class="fa 	fa-whatsapp" aria-hidden="true"></i> Contato: <wbr>{{ $user->cpf }}
+									</b>
+								</p>
+							@endforeach
 					</div>
 				</div>
 			</div>

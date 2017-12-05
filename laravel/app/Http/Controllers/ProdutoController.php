@@ -34,12 +34,11 @@ class ProdutoController extends Controller
 
     {
       $produtos = DB::select('select * from produtos where categoria_id=1 order by rand() limit 9');
-      return view('acessorios',['produtos' => $produtos]);
+      $users = User::all();
+      return view('acessorios',['produtos' => $produtos, 'users' => $users]);
 
       // $user = DB::select('select * from users');
       // return view('produtos',['users' => $users]);
-
-      // $produto = Produto::all();
       // dd($produto);
       // // return redirect()->route('home')->with( alert()->success('Produtos Pesquisados com sucesso!'));
     }
