@@ -18,7 +18,7 @@ class ProdutoController extends Controller
     public function index(Request $request)
 
     {
-      $produtos = DB::select('select * from produtos');
+      $produtos = DB::select('select * from produtos order by rand() asc limit 9');
       return view('produtos',['produtos' => $produtos]);
 
       // $user = DB::select('select * from users');

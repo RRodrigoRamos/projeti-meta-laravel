@@ -64,7 +64,7 @@
 									</i>
 									Entra
 							</a>
-							<a class="dropdown-item" href="/register">
+							<a class="dropdown-item" href="{{ route('register') }}">
 								<i class="fa fa-check-square-o" aria-hidden="true">
 								</i>
 								Cadastro

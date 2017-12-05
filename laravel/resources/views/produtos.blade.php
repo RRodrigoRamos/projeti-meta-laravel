@@ -47,17 +47,17 @@
                 <h4>Teste {{ $produto->titulo }} </h4>
 								<p><b>n° P{{ $produto->id }}</b> &nbsp;
                   {{ $produto->descricao }} <br/>
-									<b>Estado:{{ $produto->estado }}</b>
+									<b>Estado: {{ $produto->estado }}</b>
 								</p>
 								<p>
 									<b class="btn btn-outline-primary" role="button">
 										<i class="fa fa-money" aria-hidden="true"></i> R$ {{  $produto->valor }}
 									</b>
-									<a href="#" class="btn btn-outline-dark" role="button">Adicionar </a>
+									<a href="#" class="btn btn-outline-dark" role="button">Favoritar </a>
 								</p>
 								<p>
 									<b class="btn btn-outline-success" role="button">
-									<i class="fa 	fa-whatsapp" aria-hidden="true"></i> Contato:96 - 99102-9214
+									<i class="fa 	fa-whatsapp" aria-hidden="true"></i> Contato:<wbr>96 - 99102-9214
 									</b>
 								</p>
 						</div>
