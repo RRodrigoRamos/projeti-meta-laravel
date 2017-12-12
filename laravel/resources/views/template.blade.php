@@ -38,19 +38,19 @@
 					</i> HOME
 						<span class="sr-only">(current)</span>
 				</a>
-				<a class="nav-item nav-link" href="/acessorios">
+				<a class="nav-item nav-link" href="/categoria/acessorios">
 					Acessórios
 				</a>
-				<a class="nav-item nav-link" href="/automotivos">
+				<a class="nav-item nav-link" href="/categoria/automotivos">
 					Automotivos
 				</a>
-				<a class="nav-item nav-link" href="/eletronicos">
+				<a class="nav-item nav-link" href="/categoria/eletronicos">
 					Eletrônicos
 				</a>
-				<a class="nav-item nav-link" href="/eletrodomesticos">
+				<a class="nav-item nav-link" href="/categoria/eletrodomesticos">
 					Eletrôdomesticos
 				</a>
-				<a class="nav-item nav-link" href="/imoveis">
+				<a class="nav-item nav-link" href="/categoria/imoveis">
 					Imovéis
 				</a>
 				<li class="nav-item dropdown">
@@ -150,7 +150,11 @@
 					<p>
 						<i class="fa fa-copyright" aria-hidden="true"></i> COPYRIGHT 2017 - CVMM, TODOS OS DIREITOS RESERVADOS.<br />
 						<a href="https://github.com/RRodrigoRamos/projeti-meta-2017_2" target="_blank"> Repositorio GitHub</a>
-						<i class="fa fa-github-alt" aria-hidden="true"></i>
+						<i class="fa fa-github-alt" aria-hidden="true"></i><br />
+						<a href="https://creativecommons.org/licenses/by/3.0/br/"  target="_blank">
+							2017 - 2017 Licença Creative Commons 3.0 International
+						</a>
+						<br/>
 					</p>
 				</li>
 			</ul>

@@ -25,14 +25,13 @@
 								</b>
 								<a href="#" class="btn btn-outline-dark" role="button">Favoritar </a>
 							</p>
-							@foreach ($users as $user)
+
 								<p>
 									<b class="btn btn-outline-success" role="button">
-										<i class="fa 	fa-whatsapp" aria-hidden="true"></i> Contato: <wbr>{{ $user->telefone }}
+										<i class="fa 	fa-whatsapp" aria-hidden="true"></i> Contato: <wbr>96 - 991029214
 									</b>
 								</p>
-							@endforeach
-					</div>
+							</div>
 				</div>
 			</div>
 					@if($indice % 3 === 2)
@@ -51,5 +50,10 @@
 			@endforeach
 		</div>
 	</div>
+	<nav id="paginacao" aria-label="Page navigation example">
+			<ul class="pagination justify-content-center">
+				{{-- {{ $produtos->links() }} --}}
+			</ul>
+ </nav>
 	</article>
 	@stop

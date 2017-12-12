@@ -60,14 +60,18 @@
                 <button type="submit" class="btn btn-primary">
                     &nbsp;&nbsp;Acessar&nbsp;&nbsp;
                 </button>
-              <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    Esqueceu sua Senha ?
-                                </a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                <a class="btn btn-link" href="{{ route('password.request') }}">
+                  Esqueceu sua Senha ?
+                </a>
             </div>
+          </div>
+        </form>
+        <a href="/register" ></a><button class="btn btn-primary">
+            &nbsp;&nbsp;NOVO CADASTRO&nbsp;&nbsp;
+        </button>
+      </a>
+      </div>
     </div>
+  </div>
 </article>
 @endsection
