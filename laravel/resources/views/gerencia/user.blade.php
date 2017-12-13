@@ -3,7 +3,7 @@
   <article id="siteUser" role"main">
       <h2 class="text-center">
 
-        {{dd(Auth::user()->email)}}
+        {{-- {{dd(Auth::user()->email)}} --}}
         Bem Vindo, <i class="fa fa-user" aria-hidden="true"></i> <ul class="nav justify-content-center">
             <!-- Authentication Links -->
             @guest

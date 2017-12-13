@@ -17,11 +17,11 @@ Route::get('/', 'ProdutoController@index');
 Route::get('/inicio', 'ProdutoController@index');
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/categoria/{categoria}','ProdutoController@produtos');
-// Route::get('/categoria/{categoria}','ProdutoController@automotivos');
-// Route::get('/categoria/{categoria}','ProdutoController@eletronicos');
-// Route::get('/categoria/{categoria}','ProdutoController@eletrodomesticos');
-// Route::get('/categoria/{categoria}','ProdutoController@imoveis');
+Route::get('/categoria/acessorios','ProdutoController@acessorios');
+Route::get('/categoria/automotivos','ProdutoController@automotivos');
+Route::get('/categoria/eletronicos','ProdutoController@eletronicos');
+Route::get('/categoria/eletrodomesticos','ProdutoController@eletrodomesticos');
+Route::get('/categoria/imoveis','ProdutoController@imoveis');
 
 Route::get('/user',function() {
 	return view('gerencia.user');

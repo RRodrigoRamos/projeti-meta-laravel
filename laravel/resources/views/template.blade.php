@@ -9,8 +9,8 @@
 		<meta name="keywords" content="1.Vendas,2 compras, venda e compra, Vender, vende, Comprar" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 			<!-- Arquivos e Fontes -->
-    <link rel="icon" href="img/amapa.png" type="image/x-icon"/>
-    <link rel="shortcut icon" href="img/amapa.png" type="image/x-icon"/>
+    <link rel="icon" href="../img/amapa.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="../img/amapa.png" type="image/x-icon"/>
 		<link rel="stylesheet" type="text/css" media="all" href="../css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" media="all" href="../css/bootstrap.css"/>
   	<link rel="stylesheet" type="text/css" media="screen" href="../css/index.css"/>
@@ -147,13 +147,14 @@
 					 <a href="https://github.com/RRodrigoRamos" target="_blank"> Rodrigo B. Ramos </a>
 				</li>
 				<li class="text-center">
-					<p>
+					<p><br/>
 						<i class="fa fa-copyright" aria-hidden="true"></i> COPYRIGHT 2017 - CVMM, TODOS OS DIREITOS RESERVADOS.<br />
 						<a href="https://github.com/RRodrigoRamos/projeti-meta-2017_2" target="_blank"> Repositorio GitHub</a>
 						<i class="fa fa-github-alt" aria-hidden="true"></i><br />
 						<a href="https://creativecommons.org/licenses/by/3.0/br/"  target="_blank">
 							2017 - 2017 Licença Creative Commons 3.0 International
 						</a>
+						<br/>
 						<br/>
 					</p>
 				</li>

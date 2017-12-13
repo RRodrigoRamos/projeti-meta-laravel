@@ -14,7 +14,7 @@
 					<div class="thumbnail">
 						<img data-src="holder.js/100%x100" alt="Produto -C&amp;M-"  src="{{ $produto->urlimg }}" data-holder-rendered="true"/>
 						<div class="caption">
-							<h4>Teste {{ $produto->titulo }} </h4>
+							<h4>{{ $produto->titulo }} </h4>
 							<p><b>n° P{{ $produto->id }}</b> &nbsp;
 								{{ $produto->descricao }} <br/>
 								<b>Estado: {{ $produto->estado }}</b>
@@ -28,7 +28,7 @@
 
 								<p>
 									<b class="btn btn-outline-success" role="button">
-										<i class="fa 	fa-whatsapp" aria-hidden="true"></i> Contato: <wbr>96 - 991029214
+										<i class="fa 	fa-whatsapp" aria-hidden="true"></i> Contato: <wbr>  }}
 									</b>
 								</p>
 							</div>
@@ -37,7 +37,7 @@
 					@if($indice % 3 === 2)
 						<div class="col-sm-3 col-md-3" class="patrocinio">
 							<div class="thumbnail">
-								<img data-src="holder.js/100%x100" alt="Produto -C&amp;M-"   src="img/rodape/meta.png" data-holder-rendered="true">
+								<img data-src="holder.js/100%x100" alt="Produto -C&amp;M-"   src="../img/rodape/meta.png" data-holder-rendered="true">
 								<div class="caption">
 									<h5>Patrocinador</h5>
 									<p>
@@ -52,7 +52,7 @@
 	</div>
 	<nav id="paginacao" aria-label="Page navigation example">
 			<ul class="pagination justify-content-center">
-				{{-- {{ $produtos->links() }} --}}
+				{{ $paginas->links() }}
 			</ul>
  </nav>
 	</article>

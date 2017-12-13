@@ -25,69 +25,73 @@ class ProdutoController extends Controller
       return view('categorias.produtos',['produtos' => $produtos]);
     }
 
-    public function produtos(Request $request, $categoria)
+
+    public function acessorios(Request $request)
     {
-      $produtos = Produto::select('select * from produtos where categoria_id=1 order by rand() limit 9');
+        $produtos = DB::select('select * from produtos where categoria_id=1 order by rand() limit 9');
+        
+      $paginas = Produto::where('categoria_id','=', 1)->paginate(9);
+
       return view('categorias.acessorios',[
-        'produtos' => $produtos
+        'produtos' => $produtos,
+        'paginas' => $paginas,
       ]);
     }
-    //
-    // public function automotivos(Request $request)
-    //
-    // {
-    //   $produtos = DB::select('select * from produtos where categoria_id=2 order by rand() limit 9');
-    //   return view('categorias.automotivos',['produtos' => $produtos]);
-    //
-    //   // $user = DB::select('select * from users');
-    //   // return view('produtos',['users' => $users]);
-    //
-    //   // $produto = Produto::all();
-    //   // dd($produto);
-    //   // // return redirect()->route('home')->with( alert()->success('Produtos Pesquisados com sucesso!'));
-    // }
-    //
-    // public function eletronicos(Request $request)
-    //
-    // {
-    //   $produtos = DB::select('select * from produtos where categoria_id=3 order by rand() limit 9');
-    //   return view('categorias.eletronicos',['produtos' => $produtos]);
-    //
-    //   // $user = DB::select('select * from users');
-    //   // return view('produtos',['users' => $users]);
-    //
-    //   // $produto = Produto::all();
-    //   // dd($produto);
-    //   // // return redirect()->route('home')->with( alert()->success('Produtos Pesquisados com sucesso!'));
-    // }
-    //
-    // public function eletrodomesticos(Request $request)
-    //
-    // {
-    //   $produtos = DB::select('select * from produtos where categoria_id=4 order by rand() limit 9');
-    //   return view('categorias.eletrodomesticos',['produtos' => $produtos]);
-    //
-    //   // $user = DB::select('select * from users');
-    //   // return view('produtos',['users' => $users]);
-    //
-    //   // $produto = Produto::all();
-    //   // dd($produto);
-    //   // // return redirect()->route('home')->with( alert()->success('Produtos Pesquisados com sucesso!'));
-    // }
-    //
-    // public function imoveis(Request $request)
-    //
-    // {
-    //   $produtos = DB::select('select * from produtos where categoria_id=5 order by rand() limit 9');
-    //   return view('categorias.imoveis',['produtos' => $produtos]);
-    //
-    //   // $user = DB::select('select * from users');
-    //   // return view('produtos',['users' => $users]);
-    //
-    //   // $produto = Produto::all();
-    //   // dd($produto);
-    //   // // return redirect()->route('home')->with( alert()->success('Produtos Pesquisados com sucesso!'));
-    // }
+
+    public function automotivos(Request $request)
+
+    {
+      $produtos = DB::select('select * from produtos where categoria_id=2 order by rand() limit 9');
+      $categorias = Produto::where('categoria_id','=', 2)->paginate(9);
+
+      return view('categorias.automotivos',[
+        'produtos' => $produtos,
+        'categorias' => $categorias,
+      ]);
+    }
+
+    public function eletronicos(Request $request)
+
+    {
+      $produtos = DB::select('select * from produtos where categoria_id=3 order by rand() limit 9');
+      $categorias = Produto::where('categoria_id','=', 3)->paginate(9);
+
+      return view('categorias.eletronicos',[
+        'produtos' => $produtos,
+        'categorias' => $categorias,
+      ]);
+    }
+
+    public function eletrodomesticos(Request $request)
+
+    {
+      $produtos = DB::select('select * from produtos where categoria_id=4 order by rand() limit 9');
+      $categorias = Produto::where('categoria_id','=', 3)->paginate(9);
+
+      return view('categorias.eletrodomesticos',[
+        'produtos' => $produtos,
+        'categorias' => $categorias,
+      ]);
+
+    }
+
+    public function imoveis(Request $request)
+
+    {
+      $produtos = DB::select('select * from produtos where categoria_id=5 order by rand() limit 9');
+      $categorias = Produto::where('categoria_id','=', 3)->paginate(9);
+
+      return view('categorias.imoveis',[
+        'produtos' => $produtos,
+        'categorias' => $categorias,
+      ]);
+    }
+
+    public function cadastrarProduto(Request $request)
+
+    {
+
+    }
 
 
     /**
