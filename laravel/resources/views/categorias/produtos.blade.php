@@ -57,7 +57,7 @@
 								</p>
 								<p>
 									<b class="btn btn-outline-success" role="button">
-									<i class="fa 	fa-whatsapp" aria-hidden="true"></i> Contato:<wbr>96 - 99102-9214
+									<i class="fa 	fa-whatsapp" aria-hidden="true"></i> Contato:<wbr> 96 - 99102-9214
 									</b>
 								</p>
 						</div>

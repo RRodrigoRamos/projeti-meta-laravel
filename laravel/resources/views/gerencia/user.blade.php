@@ -56,7 +56,7 @@
     <h2 class="text-center">
       Produtos Cadastrados do Usuario
       <i class="fa fa-user" aria-hidden="true"></i>
-      Rodrigo Ramos
+      {{ Auth::user()->name }}
       <i class="fa fa-wrench" aria-hidden="true"></i>
     </h2>
     <br/><hr class="col-12 align-items-center"><br/>
@@ -66,24 +66,24 @@
                <img data-src="holder.js/100%x100" alt="Produto -CM-"  src="../img/categorias/anuncios/imovel/1.png" data-holder-rendered="true"/>
                  <div class="caption">
                      <h4>Titulo Produto </h4>
-                        <p>Descrição 1 do Produto <br/>Descrição 2 do Produto<br/>
+                        <p>Descrição do Produto: Breve explicação relativos os produtos ou items que está sendo vendido <br/>
                             <b>
                               Estado(): Se for casa é localição se for carro KM Rodados
                             </b>
                         </p>
                         <p>
-                           <b class="btn btn-outline-primary" role="button">
-                             <i class="fa fa-money" aria-hidden="true"></i>
-                              R$ 50.500,00
-                          </b>
-                         <a href="#" class="btn btn-outline-dark" role="button">
+                           <a href="/editarProduto/{id}" class="btn btn-outline-primary" role="button">
+
+                              EDITAR
+                          </a>
+                         <a href="/excluirProduto/{id}" class="btn btn-outline-dark" role="button">
                            DELETAR
                          </a>
                        </p>
                        <p>
                         <b class="btn btn-outline-success" role="button">
                           <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                           Contato:96 - 99771-1777
+                           TROCAR: n° Contato/Whats
                         </b>
                       </p>
                </div>

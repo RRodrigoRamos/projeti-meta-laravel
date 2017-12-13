@@ -29,7 +29,6 @@ class ProdutoController extends Controller
     public function acessorios(Request $request)
     {
         $produtos = DB::select('select * from produtos where categoria_id=1 order by rand() limit 9');
-        
       $paginas = Produto::where('categoria_id','=', 1)->paginate(9);
 
       return view('categorias.acessorios',[
